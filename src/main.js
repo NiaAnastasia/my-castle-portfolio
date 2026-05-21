@@ -324,6 +324,28 @@ k.scene("main", async () => {
     }
   }
 
+  // intro dialogue after loading
+  setTimeout(() => {
+    player.isInDialogue = true;
+    displayDialogue(`*yawns* Where am I... This place looks ancient.`, () => {
+      setTimeout(() => {
+        displayDialogue(
+          `There's someone standing near the stained glass... Maybe I should talk to them?`,
+          () => {
+            setTimeout(() => {
+              displayDialogue(
+                `And what are those glowing lights around the hall? Let's explore!`,
+                () => {
+                  player.isInDialogue = false;
+                },
+              );
+            }, 100);
+          },
+        );
+      }, 100);
+    });
+  }, 5500);
+
   k.camPos(player.worldPos().x, player.worldPos().y);
   setCamScale(k);
 

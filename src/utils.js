@@ -35,7 +35,7 @@ export function displayDialogue(text, onDisplayEnd) {
         document.removeEventListener("click", onDocClick);
       }
     });
-  }, 300);
+  }, 500);
 
   addEventListener("keypress", (key) => {
     if (key.code === "Enter") {
