@@ -1193,6 +1193,42 @@
                  "width":29.3616215192271,
                  "x":299.299109679864,
                  "y":619.435499147566
+                }, 
+                {
+                 "height":577.178239716939,
+                 "id":111,
+                 "name":"",
+                 "opacity":1,
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":117.204776647501,
+                 "x":-114.99336576736,
+                 "y":393.631136665192
+                }, 
+                {
+                 "height":488.121752041574,
+                 "id":112,
+                 "name":"",
+                 "opacity":1,
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":102.078693392725,
+                 "x":1922.79138827023,
+                 "y":410.170749814402
+                }, 
+                {
+                 "height":527.09725315516,
+                 "id":113,
+                 "name":"",
+                 "opacity":1,
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":194.877505567929,
+                 "x":1917.22345953972,
+                 "y":404.60282108389
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -1290,7 +1326,7 @@
          "y":0
         }],
  "nextlayerid":8,
- "nextobjectid":111,
+ "nextobjectid":114,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.12.1",
@@ -1298,75 +1334,75 @@
  "tilesets":[
         {
          "firstgid":1,
-         "source":"floors.tsx"
+         "source":"..\/..\/2d-portfolio-kaboom\/public\/floors.tsx"
         }, 
         {
          "firstgid":1480,
-         "source":"walls.tsx"
+         "source":"..\/..\/2d-portfolio-kaboom\/public\/walls.tsx"
         }, 
         {
          "firstgid":1945,
-         "source":"cathedral.tsx"
+         "source":"..\/..\/2d-portfolio-kaboom\/public\/cathedral.tsx"
         }, 
         {
          "firstgid":2201,
-         "source":"!$Gate_Cathedral2_sun.tsx"
+         "source":"..\/..\/2d-portfolio-kaboom\/public\/!$Gate_Cathedral2_sun.tsx"
         }, 
         {
          "firstgid":2345,
-         "source":"!Decoration2.tsx"
+         "source":"..\/..\/2d-portfolio-kaboom\/public\/!Decoration2.tsx"
         }, 
         {
          "firstgid":2537,
-         "source":"Wall Edges, Carpets, Decor.tsx"
+         "source":"..\/..\/2d-portfolio-kaboom\/public\/Wall Edges, Carpets, Decor.tsx"
         }, 
         {
          "firstgid":4781,
-         "source":"!Statue.tsx"
+         "source":"..\/..\/2d-portfolio-kaboom\/public\/!Statue.tsx"
         }, 
         {
          "firstgid":5069,
-         "source":"!$Lights_Glowing.tsx"
+         "source":"..\/..\/2d-portfolio-kaboom\/public\/!$Lights_Glowing.tsx"
         }, 
         {
          "firstgid":5369,
-         "source":"!Flags_banner_Inside.tsx"
+         "source":"..\/..\/2d-portfolio-kaboom\/public\/!Flags_banner_Inside.tsx"
         }, 
         {
          "firstgid":5561,
-         "source":"Fantasy_Inside_B.tsx"
+         "source":"..\/..\/2d-portfolio-kaboom\/public\/Fantasy_Inside_B.tsx"
         }, 
         {
          "firstgid":5817,
-         "source":"Fantasy_Inside_D.tsx"
+         "source":"..\/..\/2d-portfolio-kaboom\/public\/Fantasy_Inside_D.tsx"
         }, 
         {
          "firstgid":6073,
-         "source":"Fantasy_Inside_C.tsx"
+         "source":"..\/..\/2d-portfolio-kaboom\/public\/Fantasy_Inside_C.tsx"
         }, 
         {
          "firstgid":6329,
-         "source":"!$Big_window.tsx"
+         "source":"..\/..\/2d-portfolio-kaboom\/public\/!$Big_window.tsx"
         }, 
         {
          "firstgid":6617,
-         "source":"Fantasy_Inside_A5.tsx"
+         "source":"..\/..\/2d-portfolio-kaboom\/public\/Fantasy_Inside_A5.tsx"
         }, 
         {
          "firstgid":6745,
-         "source":"!Decoration_static.tsx"
+         "source":"..\/..\/2d-portfolio-kaboom\/public\/!Decoration_static.tsx"
         }, 
         {
          "firstgid":6937,
-         "source":"!$Altar.tsx"
+         "source":"..\/..\/2d-portfolio-kaboom\/public\/!$Altar.tsx"
         }, 
         {
          "firstgid":7045,
-         "source":"!$Fireplace1.tsx"
+         "source":"..\/..\/2d-portfolio-kaboom\/public\/!$Fireplace1.tsx"
         }, 
         {
          "firstgid":7153,
-         "source":"!$Chandelier.tsx"
+         "source":"..\/..\/2d-portfolio-kaboom\/public\/!$Chandelier.tsx"
         }],
  "tilewidth":48,
  "type":"map",
