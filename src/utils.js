@@ -47,7 +47,9 @@ export function displayDialogue(text, onDisplayEnd) {
 export function setCamScale(k) {
   const ratio = window.innerWidth / window.innerHeight;
   if (ratio < 1) {
-    k.camScale(k.vec2(0.7));
+    k.camScale(k.vec2(0.6));
+  } else if (ratio < 1.3) {
+    k.camScale(k.vec2(0.8));
   } else {
     k.camScale(k.vec2(1));
   }

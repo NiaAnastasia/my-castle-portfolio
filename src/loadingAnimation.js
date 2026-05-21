@@ -48,14 +48,19 @@ function getDragonPoints(canvas) {
   const lines = dragonAscii.split("\n");
   const points = [];
 
-  const isMobile = canvas.width < 768;
-  const cellW = isMobile ? 4 : 10;
-  const cellH = isMobile ? 7 : 16;
-  const scale = isMobile ? 0.4 : 1;
+  const isMobile = canvas.width < 480;
+  const isTablet = canvas.width >= 480 && canvas.width < 1024;
+
+  const cellW = isMobile ? 3 : isTablet ? 6 : 10;
+  const cellH = isMobile ? 5 : isTablet ? 10 : 16;
 
   const dragonW = 100 * cellW;
   const dragonH = lines.length * cellH;
-  const offsetX = isMobile ? 10 : (canvas.width - dragonW) / 2 - 150;
+  const offsetX = isMobile
+    ? 5
+    : isTablet
+      ? (canvas.width - dragonW) / 2 - 50
+      : (canvas.width - dragonW) / 2 - 150;
   const offsetY = (canvas.height - dragonH) / 2;
 
   for (let row = 0; row < lines.length; row++) {
@@ -95,8 +100,13 @@ export function startDragonAnimation(canvas) {
 
   function draw() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    const isMobile = canvas.width < 768;
-    ctx.font = isMobile ? "6px monospace" : "12px monospace";
+    const isMobile = canvas.width < 480;
+    const isTablet = canvas.width >= 480 && canvas.width < 1024;
+    ctx.font = isMobile
+      ? "4px monospace"
+      : isTablet
+        ? "8px monospace"
+        : "12px monospace";
 
     particles.forEach((p) => {
       p.x += (p.tx - p.x) * p.speed;
