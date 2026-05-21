@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/key.svg" />
+    <link rel="icon" type="image/png" sizes="256x256" href="/key.png" />
+    <link rel="apple-touch-icon" sizes="256x256" href="/key.png" />
+    <link rel="stylesheet" href="/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Castle</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.cursors-4u.net/cursors/animated/blooming-sparkly-red-rose-ee595572-32.css"
+    />
+  </head>
+  <body>
+    <div id="app">
+      <div id="loading-screen">
+        <canvas id="dragon-canvas"></canvas>
+        <div id="loading-right">
+          <img src="/key.svg" id="loading-key" alt="loading" />
+          <p id="loading-text">Opening the castle...</p>
+        </div>
+      </div>
+      <div>
+        <p class="note">Tap/Click around to move</p>
+        <button id="audio-toggle" title="Toggle sound">
+          <img id="audio-icon" src="/music-on.svg" alt="sound" />
+        </button>
+        <div id="bread-counter" style="display: none">
+          🍞 <span id="bread-count">0</span>/3
+        </div>
+
+        <div id="textbox-container" style="display: none">
+          <div id="textbox">
+            <img class="corner corner-tl" src="/ornament.svg" alt="" />
+            <img class="corner corner-tr" src="/ornament.svg" alt="" />
+            <img class="corner corner-bl" src="/ornament.svg" alt="" />
+            <img class="corner corner-br" src="/ornament.svg" alt="" />
+            <p id="dialogue" class="ui-text"></p>
+            <p id="dialogue" class="ui-text"></p>
+            <div class="btn-container">
+              <button id="close" class="ui-close-btn">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <canvas id="game"></canvas>
+    </div>
+    <script type="module" src="src/main.js"></script>
+    <div id="vignette"></div>
+    <canvas id="particles-canvas"></canvas>
+  </body>
+</html>

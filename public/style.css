@@ -1,0 +1,293 @@
+@import url("https://fonts.googleapis.com/css2?family=MedievalSharp&family=Cinzel:wght@400;700&display=swap");
+
+@font-face {
+  font-family: monogram;
+  src: url(/monogram.ttf);
+}
+
+body {
+  font-family: monogram, monospace;
+  font-size: 2rem;
+  overflow: hidden;
+}
+
+#app {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+#textbox-container {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 2vh;
+  width: 70%;
+  z-index: 10;
+}
+
+#textbox {
+  background: linear-gradient(180deg, #1a0a2e 0%, #0d0618 100%);
+  border: 3px solid #c9a84c;
+  border-radius: 8px;
+  padding: 1.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow:
+    0 0 20px rgba(201, 168, 76, 0.4),
+    inset 0 0 30px rgba(0, 0, 0, 0.8);
+  position: relative;
+}
+
+#textbox .corner {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  filter: invert(1) sepia(1) saturate(3) hue-rotate(5deg) brightness(0.9);
+  opacity: 0.9;
+}
+
+#textbox .corner-tl {
+  top: -5px;
+  left: -5px;
+  transform: rotate(0deg);
+}
+#textbox .corner-tr {
+  top: -5px;
+  right: -5px;
+  transform: rotate(90deg);
+}
+#textbox .corner-bl {
+  bottom: -5px;
+  left: -5px;
+  transform: rotate(270deg);
+}
+#textbox .corner-br {
+  bottom: -5px;
+  right: -5px;
+  transform: rotate(180deg);
+}
+
+#textbox::before {
+  content: "✦";
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #c9a84c;
+  font-size: 1.5rem;
+  background: #1a0a2e;
+  padding: 0 10px;
+}
+
+#textbox::after {
+  content: "❧ ✦ ❧";
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #c9a84c;
+  font-size: 1rem;
+  background: #1a0a2e;
+  padding: 0 10px;
+}
+
+#dialogue {
+  color: #e8d5a3;
+  margin: 0 0 1rem 0;
+  user-select: none;
+  text-shadow: 0 0 10px rgba(201, 168, 76, 0.3);
+  line-height: 1.4;
+}
+
+#dialogue a {
+  color: #c9a84c;
+  text-shadow: 0 0 8px rgba(201, 168, 76, 0.5);
+  text-decoration: none;
+  border-bottom: 1px solid #c9a84c;
+}
+
+#dialogue a:hover {
+  color: #fff;
+  text-shadow: 0 0 12px #c9a84c;
+}
+
+.btn-container {
+  align-self: flex-end;
+}
+
+.ui-close-btn {
+  font-family: monogram, monospace;
+  font-size: inherit;
+  background: linear-gradient(180deg, #2a1a4e 0%, #1a0a2e 100%);
+  color: #c9a84c;
+  border: 2px solid #c9a84c;
+  border-radius: 4px;
+  padding: 0.3rem 1.5rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-shadow: 0 0 8px rgba(201, 168, 76, 0.5);
+}
+
+.ui-close-btn:hover {
+  background: linear-gradient(180deg, #3a2a6e 0%, #2a1a4e 100%);
+  box-shadow: 0 0 10px rgba(201, 168, 76, 0.4);
+}
+
+.note {
+  position: absolute;
+  left: 5%;
+  top: 1vh;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  text-shadow:
+    0 0 8px #c9a84c,
+    0 0 2px #000;
+}
+
+#loading-screen {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: #0d0618;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  transition: opacity 1.5s;
+}
+
+#dragon-canvas {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#loading-key {
+  width: 120px;
+  height: 120px;
+  filter: invert(1) sepia(1) saturate(3) hue-rotate(5deg);
+  animation: rotate 6s linear infinite;
+}
+
+#loading-text {
+  color: #c9a84c;
+  margin-top: 1rem;
+  text-shadow: 0 0 10px #c9a84c;
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+#loading-right {
+  position: absolute;
+  right: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 1.2rem;
+  }
+
+  #textbox-container {
+    width: 95%;
+    left: 50%;
+    bottom: 1vh;
+  }
+
+  #textbox {
+    padding: 1rem;
+  }
+
+  #textbox .corner {
+    width: 30px;
+    height: 30px;
+  }
+
+  .ui-close-btn {
+    padding: 0.2rem 1rem;
+  }
+
+  #loading-right {
+    right: 5%;
+    bottom: 10%;
+    top: auto;
+  }
+
+  #loading-key {
+    width: 80px;
+    height: 80px;
+  }
+
+  #loading-text {
+    font-size: 1rem;
+  }
+
+  .note {
+    font-size: 1rem;
+    left: 2%;
+  }
+}
+
+*, *:hover, *:focus, *:active {
+  cursor: url('https://cdn.cursors-4u.net/css-previews/blooming-sparkly-red-rose-bdc39f01-css.webp') 0 0, auto !important;
+}
+
+
+#vignette {
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(ellipse at center, transparent 50%, rgba(60, 54, 119, 0.85) 100%);
+  pointer-events: none;
+  z-index: 10;
+}
+
+#particles-canvas {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9;
+}
+
+#bread-counter {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 1vh;
+  color: #c9a84c;
+  text-shadow: 0 0 10px rgba(201, 168, 76, 0.6);
+  font-size: 2rem;
+  z-index: 10;
+  pointer-events: none;
+}
+
+#audio-toggle {
+  position: absolute;
+  right: 5%;
+  top: 2vh;
+  background: transparent;
+  border: none;
+  z-index: 15;
+  padding: 0;
+}
+
+#audio-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  filter: invert(1) sepia(1) saturate(3) hue-rotate(5deg) brightness(0.9);
+  opacity: 0.85;
+  transition: opacity 0.2s;
+}
+
+#audio-toggle:hover #audio-icon {
+  opacity: 1;
+}
