@@ -6,7 +6,7 @@ and discover the story of the developer behind it all.
 
 Built with **Kaboom.js**, designed in **Tiled**, character created in **PixelLab**.
 
-🎮 Live Demo: [YOUR_LINK_HERE]
+🎮 Live Demo: https://niaanastasia.github.io/my-castle-portfolio/
 
 ## Features
 
