@@ -5,7 +5,7 @@ export const dialogueData = {
   pc: `The secret room. I work with JavaScript, TypeScript, React, and Node.js — and a little Unity too. Debugging is fun... until it's 3am and a bug won't let me sleep.`,
   library: `My library. Detectives, fantasy, comics, manga — in Ukrainian, Russian, English, and French.`,
   about: `A beautiful bed with a name carved into the headboard... *...Anastasia...* — whispers the bear. A developer who loves 3D printing, gaming, and sleeping. Especially sleeping.`,
-  resume: `Oh, my diploma. Was it long ago? Feels like both. <a href="#" target="_blank">View →</a>`,
+  resume: `Oh, my diploma. Was it long ago? Feels like both.<br><a href="https://drive.google.com/drive/folders/1tzUV_aMn320iO08Xe1ihE_v5xZPbv_nI" target="_blank">Diploma + transcript + French equivalency recognition →</a>`,
   contacts: `Find me here:<br>GitHub: <a href="https://github.com/NiaAnastasia" target="_blank">NiaAnastasia</a><br>LinkedIn: <a href="https://www.linkedin.com/in/anastasia-puhach-32547132b/" target="_blank">Anastasia Puhach</a>`,
   artwork: `My other passion. Every painting here is mine.`,
   "church-art": `Stained glass. It calms me down and inspires me at the same time.`,
